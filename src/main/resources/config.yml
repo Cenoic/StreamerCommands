@@ -1,5 +1,4 @@
-# Default configuration file for MyPlugin
-# You can add your configuration options here
+# Default configuration file for StreamerCommands
 # <arg1> is the command name.
 # <arg2> is the second argument provided by the user.
 # <arg3> is the name of the sender.
