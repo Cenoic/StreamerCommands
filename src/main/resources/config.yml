@@ -1,0 +1,23 @@
+# Default configuration file for MyPlugin
+# You can add your configuration options here
+# <arg1> is the command name.
+# <arg2> is the second argument provided by the user.
+# <arg3> is the name of the sender.
+
+Commands:
+  viewer:
+    - "lp user <arg2> permission set chatcontrol.viewer.<arg3> true"
+    - "lp user <arg2> permission set chatcontrol.channel.join.<arg3> true"
+    - "lp user <arg2> permission set chatcontrol.chatmod.<arg3> false"
+  chatmod:
+    - "lp user <arg2> permission set chatcontrol.chatmod.<arg3> true"
+    - "lp user <arg2> permission set chatcontrol.viewer.<arg3> false"
+    - "lp user <arg2> permission set chatcontrol.channel.join.<arg3> true"
+  remove:
+    - "lp user <arg2> permission set chatcontrol.channel.join.<arg3> false"
+    - "lp user <arg2> permission set chatcontrol.channel.view.<arg3> false"
+    - "lp user <arg2> permission set chatcontrol.chatmod.<arg3> false"
+  live:
+    - "lp user <arg3> permission set chatcontrol.group.live true"
+  offline:
+    - "lp user <arg3> permission set chatcontrol.group.live false"

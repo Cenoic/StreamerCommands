@@ -1,0 +1,16 @@
+name: StreamerCommands
+version: 1.0.0
+description: Cenoic Plugin for managing Streamer commands.
+main: com.senrua.StreamerCommands.StreamerCommands
+api-version: 1.19
+author: Rainie
+commands:
+  streamer:
+    description: Executes custom commands
+    usage: /<command> <arg1> <arg2>
+    aliases: []
+    permission: cenoic.streamer
+permissions:
+  cenoic.streamer:
+    description: Allows using the /streamer command
+    default: op
